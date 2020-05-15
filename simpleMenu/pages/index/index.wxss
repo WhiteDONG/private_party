@@ -1,0 +1,159 @@
+/**index.wxss**/
+
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 0;
+  z-index: 1;
+} 
+.usermotto > img {
+  width: 100%；
+}
+.user-motto {
+  display: block;
+  margin-bottom: 20px;
+  margin-top:-45px; 
+  color: #fff;
+  text-align: center;
+}
+/* .container{
+  background: url('./images/resturant.jpg')
+} */
+.btn-enter {
+ height:80rpx;
+ font-size:30rpx;
+ line-height:80rpx;
+ background: #d02132;
+ width: 90%;
+ /* font-weight: bold; */
+ color:#fff;
+ margin-top:40rpx;
+}
+.user-login {
+  font-size: 28rpx;
+  /* width:85%; */
+  /* display: flex; */
+  padding:2px 4px;
+}
+.user-login text{
+  margin-left: 10px;
+  width: 250px;
+}
+.user-login > span {
+  float: right;
+}
+/* .user-login span {
+   float: right; 
+   height: 30rpx; 
+} */
+.user-login a{
+  /* padding: 20px; */
+  min-width: 20rpx;
+}
+.user-register:after{
+   content: '|'; 
+  /* border-right: 1rpx solid #000; */
+}
+.user-column{
+  width: 90%;
+}
+.user-column ul {
+  display: flex;
+  flex-direction: column;  
+  /* justify-content: center; */
+} 
+.user-column ul li{
+   /* display: inline-block;  */
+  vertical-align:middle;
+  padding: 40rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  border-bottom: 1px solid #d9d9d9;
+}
+.user-column-col1{
+  /* float: left; */
+  margin-left: 40rpx;
+  font-size:30rpx;
+}
+.user-column-col2{
+  float: right;
+  color:#d9d9d9;
+  font-size:30rpx;
+}
+.demo-text-1{
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  background-color: #1AAD19;
+  color: #FFFFFF;
+  font-size: 36rpx;
+}
+.demo-text-1:before{
+  content: 'A';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.demo-text-2{
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  /* background-color: #2782D7; */
+  /* background: url(../../images/resturant.jpg) no-repeat; */
+  color: #FFFFFF;
+  font-size: 36rpx;
+}
+.demo-text-2:before{
+  content: 'B';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.demo-text-3{
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  background-color: #F1F1F1;
+  color: #353535;
+  font-size: 36rpx;
+}
+.demo-text-3:before{
+  content: 'C';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.scroll-view-item {
+  height: 55px;
+  /* width: 30%; */
+}
+.section image {
+  width: 100%;
+}
+.section swiper {
+  height: 240px;
+}
+.icon-col{
+  height:50px;
+  width:45px;
+  float:left;
+  margin-left:25px;
+}

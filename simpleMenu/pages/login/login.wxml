@@ -1,0 +1,8 @@
+<!--pages/login/login.wxml-->
+<view class="login-area">
+  <!-- <text>正在进入美食天地</text> -->
+  <text>登录完成后，您完成的订单将自动积累积分</text>
+</view>
+ <!-- <button bindtap='login'>登录</button> -->
+ <button wx:if="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">授权登录</button>
+ <view wx:else>请升级微信版本</view>

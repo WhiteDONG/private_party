@@ -1,0 +1,13 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/login/login",
+    "pages/card/card",
+    "pages/order/order",
+    "pages/menu/menu"
+  ],
+  "window":{
+    "navigationBarTitleText": "点单系统"
+  }
+}

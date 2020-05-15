@@ -1,0 +1,10 @@
+/* pages/login/login.wxss */
+.login-area {
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  height:200px;
+}
+.login-area text {
+  width: 200px;
+}

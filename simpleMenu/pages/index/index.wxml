@@ -1,0 +1,57 @@
+<!--index.wxml-->
+<!-- <view class="container"> -->
+  <view class="user-login" wx:if="{{!isLogin}}">
+    <text>登录后，享受更多优惠</text>
+    <span>
+      <!-- <a class="user-register" href=''>注册</a> -->
+      <a bindtap="enterLogin">登录</a>
+    </span>
+  </view>
+  <view class="user-login" wx:else>
+    <text>欢迎您,{{userInfo.nickName}}</text>
+    <span>
+      <a bindtap="logout">退出</a>
+    </span>
+  </view>
+  <view class="section">
+    <swiper autoplay="true">
+      <block wx:for="{{background}}" wx:key="item.key">
+        <swiper-item>
+          <view class="swiper-item {{item.className}}">
+             <image src='{{item.img}}'/>
+          </view>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <view>
+   <button class="btn-enter" bindtap="enterMenu">开始点餐</button>
+  </view>
+  <!-- <div class="usermotto">
+    <image src='../../images/resturant.jpg'/>
+    <text class="user-motto">{{motto}}</text>
+    <button class="btn-enter" bindtap="enterMenu">ENTER</button>
+  </div> -->
+  <div class="user-column">
+    <ul>
+      <li>
+        <image class="icon-col" src='../../images/icon-card.png'/>
+        <span class="user-column-col1">我的卡包</span>
+        <a class="user-column-col2" bindtap="more">更多优惠券 >></a>
+      </li>
+      <li>
+        <image class="icon-col" src='../../images/icon-order.png'/>
+        <span class="user-column-col1">
+        我的订单
+        </span>
+        <a class="user-column-col2">查看订单 >></a>
+      </li>
+      <li>
+        <image class="icon-col" src='../../images/icon-shop.png'/>
+        <span class="user-column-col1">商城</span>
+        <a class="user-column-col2">更多产品 >></a>
+      </li>
+    </ul>
+  </div>
+  
+<!-- </view> -->

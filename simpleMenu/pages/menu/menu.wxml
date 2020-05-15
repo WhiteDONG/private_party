@@ -1,0 +1,33 @@
+<!--pages/menu/menu.wxml-->
+<!-- <text>pages/menu/menu.wxml</text> -->
+<view class='section'>
+  <view>
+    <swiper indicator-dots="true" autoplay="false">
+      <block wx:for="{{background}}" wx:key="*this">
+        <swiper-item>
+          <view class="swiper-item {{item}}"></view>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <view class="main-menu">
+    <view class="menu-feature">
+      <scroll-view scroll-y style='height:500px'>
+        <view wx:for="{{menuFeatures}}" wx:key="index" id="{{item.id}}" class="scroll-view-item {{item.id==selected?'actived':''}}" bindtap="selectFeature">
+          <image src="{{item.img}}"></image>
+          <text>{{item.name}}</text>
+        </view>
+      </scroll-view>
+    </view>
+    <view class="menu-detail">
+      <ul>
+        <li>
+          <div>
+            
+          </div>
+        </li>
+        <li>2</li>
+      </ul>
+    </view>
+  </view>
+</view>
